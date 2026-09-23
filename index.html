@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>越南鋼琴市場調研</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&display=swap">
+<style>
+  :root{
+    --bg:#f7f6f3; --surface:#fff; --ink:#1c1e21; --soft:#5e646b; --faint:#8f959c;
+    --rule:#e0ddd6; --rule2:#efece6;
+    --lacquer:#8c2f25;      /* 漆紅 */
+    --brass:#8a6a1f;        /* 黃銅 */
+    --teal:#1f5c56;         /* 松綠 */
+    --lacquer-bg:#f8eeec; --brass-bg:#f8f2e2; --teal-bg:#e9f1ef;
+    --display:"Bitter",Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#131517; --surface:#1b1e21; --ink:#e7e5e0; --soft:#a2a8af; --faint:#717881;
+    --rule:#2d3237; --rule2:#23272b;
+    --lacquer:#e0857a; --brass:#d3ae55; --teal:#6fb8ac;
+    --lacquer-bg:#2a1c1a; --brass-bg:#272117; --teal-bg:#172624;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#131517; --surface:#1b1e21; --ink:#e7e5e0; --soft:#a2a8af; --faint:#717881;
+    --rule:#2d3237; --rule2:#23272b;
+    --lacquer:#e0857a; --brass:#d3ae55; --teal:#6fb8ac;
+    --lacquer-bg:#2a1c1a; --brass-bg:#272117; --teal-bg:#172624;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+       font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding-block:40px 80px;padding-left:20px;padding-right:20px}
+  header{border-bottom:3px double var(--ink);padding-bottom:20px;margin-bottom:8px}
+  .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin:0 0 10px}
+  h1{font-family:var(--display);font-size:clamp(30px,5.5vw,42px);line-height:1.18;margin:0 0 12px;
+     text-wrap:balance;letter-spacing:-.01em}
+  .lede{color:var(--soft);font-size:15px;margin:0;max-width:64ch}
+  .meta{font-size:12px;color:var(--faint);margin:14px 0 0;display:flex;gap:18px;flex-wrap:wrap}
+
+  section{margin-top:44px}
+  h2{font-family:var(--display);font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
+  .sub{color:var(--soft);font-size:13.5px;margin:0 0 18px;max-width:66ch}
+  h3{font-family:var(--display);font-size:16.5px;margin:26px 0 8px}
+
+  .tw{overflow-x:auto;border-top:2px solid var(--ink);margin-bottom:6px}
+  table{border-collapse:collapse;width:100%;min-width:540px;font-size:13.5px}
+  th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+     color:var(--faint);padding:9px 12px 9px 0;border-bottom:1px solid var(--rule)}
+  td{padding:10px 12px 10px 0;border-bottom:1px solid var(--rule2);vertical-align:top}
+  tr:last-child td{border-bottom:1px solid var(--rule)}
+  .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .b{font-weight:650}
+  .big{font-family:var(--display);font-size:16px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+         background:var(--rule);border:1px solid var(--rule)}
+  .card{background:var(--surface);padding:16px 14px}
+  .card .v{font-family:var(--display);font-size:27px;line-height:1.05;display:block;font-variant-numeric:tabular-nums}
+  .card .k{font-size:11.5px;color:var(--faint);margin-top:6px;display:block;line-height:1.4}
+  .card.hot .v{color:var(--lacquer)}
+  .card.cool .v{color:var(--teal)}
+
+  .call{background:var(--lacquer-bg);border:1px solid var(--lacquer);border-radius:3px;
+        padding:18px 20px;margin:18px 0}
+  .call h3{margin:0 0 8px;color:var(--lacquer);font-size:17px}
+  .call p{margin:0 0 8px;font-size:13.5px}
+  .call p:last-child{margin:0}
+
+  .note{background:var(--brass-bg);border:1px solid var(--brass);border-radius:3px;
+        padding:16px 18px;font-size:13px;line-height:1.75;margin:18px 0}
+  .note b{color:var(--brass)}
+
+  .gap{background:var(--teal-bg);border:1px dashed var(--teal);border-radius:3px;padding:12px 16px;
+       font-size:13.5px;color:var(--teal);font-weight:600;text-align:center;margin:4px 0}
+
+  .tier{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:13.5px;margin:0}
+  .tier dt{font-weight:650;white-space:nowrap}
+  .tier dd{margin:0;color:var(--soft)}
+  @media(max-width:540px){ .tier{grid-template-columns:1fr;gap:2px} .tier dd{margin-bottom:12px} }
+
+  .bar{height:9px;background:var(--rule2);border-radius:1px;overflow:hidden;min-width:70px;display:block;margin-top:5px}
+  .bar i{display:block;height:100%;background:var(--lacquer)}
+  .bar.t i{background:var(--teal)}
+
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-size:12px;color:var(--faint)}
+  .src{font-size:11.5px;color:var(--faint);margin-top:6px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Thị trường Piano Việt Nam ／ 市場調研</p>
+  <h1>越南鋼琴市場：電商很熱，錢在線下</h1>
+  <p class="lede">胡志明市為主的四品類調研：電鋼琴、電子琴、傳統新琴、二手琴。涵蓋價格帶、品牌層級、通路結構、進口法規，並分開計算電商與實體。</p>
+  <p class="meta">
+    <span>資料期間　2026-08-24 ～ 09-22（30 天）</span>
+    <span>匯率　1 USD ≈ 26,000₫</span>
+    <span>製表　2026-09-23</span>
+  </p>
+</header>
+
+<div class="note">
+<b>資料來源與限制（先讀這段）</b><br>
+・電商數據來自 <b>Metric.vn</b>（越南電商數據平台，Shopee 渠道，30 天區間）。<b>免費版帳號的營收欄被鎖</b>，因此本報告<b>只採用銷量／商品數／店舖數</b>，不使用平台顯示的營收數字。<br>
+・價格為各琴行<b>公開標價</b>，非實際成交價；越南琴行議價空間普遍存在。<br>
+・實體通路規模、二手琴進口商與貨源<b>尚未完成查證</b>，相關段落已標示。<br>
+・本報告不含 Lazada、TikTok Shop、Facebook 社團等其他線上渠道。
+</div>
+
+<!-- 一、品類 -->
+<section>
+<h2>一、四個品類，先把名字對清楚</h2>
+<p class="sub">越南語的品類詞跟中文不是一一對應，混用會導致整份數據判讀錯誤。</p>
+<div class="tw"><table>
+  <tr><th style="width:20%">越南語</th><th style="width:18%">中文</th><th style="width:20%">規格</th><th>說明</th></tr>
+  <tr><td class="b">đàn piano cơ</td><td class="b">傳統鋼琴</td><td>有弦有槌</td><td><code>cơ</code>＝機械。含直立式（upright）與平台式（grand）</td></tr>
+  <tr><td class="b">đàn piano điện</td><td class="b">電鋼琴</td><td>88 鍵配重</td><td>本案主戰場</td></tr>
+  <tr><td class="b">đàn organ</td><td class="b">電子琴</td><td>61 鍵非配重</td><td>入門／兒童為主，單價低</td></tr>
+  <tr><td class="b">piano cũ</td><td class="b">二手鋼琴</td><td>多為日本進口</td><td>以二手傳統琴為主</td></tr>
+</table></div>
+</section>
+
+<!-- 二、規模 -->
+<section>
+<h2>二、市場規模：電商 30 天實測</h2>
+<p class="sub">Shopee 渠道，2026-08-24 ～ 09-22。年化為 ×12 的粗估，未考慮季節性。</p>
+<div class="tw"><table>
+  <tr><th style="width:24%">品類</th><th class="num">30 天銷量</th><th class="num">年化</th><th class="num">在售商品</th><th class="num">在售店舖</th><th style="width:22%">相對規模</th></tr>
+  <tr>
+    <td class="b">電子琴 organ</td><td class="num big">2,300</td><td class="num">≈27,600</td><td class="num">379</td><td class="num">183</td>
+    <td><span class="bar"><i style="width:100%"></i></span></td></tr>
+  <tr>
+    <td class="b">電鋼琴 piano điện</td><td class="num big">2,200</td><td class="num">≈26,400</td><td class="num">366</td><td class="num">164</td>
+    <td><span class="bar"><i style="width:96%"></i></span></td></tr>
+  <tr>
+    <td class="b">傳統新琴 piano cơ</td><td class="num big">516</td><td class="num">≈6,192</td><td class="num">86</td><td class="num">21</td>
+    <td><span class="bar"><i style="width:22%"></i></span></td></tr>
+  <tr>
+    <td class="b">二手琴 piano cũ</td><td class="num big" style="color:var(--lacquer)">6</td><td class="num">≈72</td><td class="num">1</td><td class="num">1</td>
+    <td><span class="bar"><i style="width:1%"></i></span></td></tr>
+</table></div>
+
+<div class="call">
+<h3>整份報告最重要的一個數字</h3>
+<p><b>二手鋼琴在電商 30 天只賣出 6 台，全越南僅 1 個商品、1 家店在賣。</b>對照電鋼琴的 2,200 台、366 個商品、164 家店，<b>差距 367 倍</b>。</p>
+<p>這不是「二手琴賣不動」，而是<b>這個市場 100% 在線下</b>。越南消費者買二手鋼琴不上電商，因為要試彈、要看琴況、要談價、要安排搬運與售後。</p>
+<p><b>戰略含意：線上只能導流，成交必須在線下。</b>開二手琴網店沒有意義；直播與內容的角色是把人帶進實體空間試彈。</p>
+</div>
+
+<h3>電鋼琴 vs 電子琴：台數相當，金額差很多</h3>
+<p class="sub">兩者銷量幾乎一樣（2,200 vs 2,300），但電鋼琴主流單價是電子琴的數倍，因此<b>金額規模遠大於電子琴</b>。資源應放在電鋼琴。</p>
+</section>
+
+<!-- 三、價格帶 -->
+<section>
+<h2>三、價格帶地圖：中段有一個明顯的洞</h2>
+<p class="sub">電鋼琴主流價格帶與代表機種。這是本報告最重要的商業結論之一。</p>
+<div class="tw"><table>
+  <tr><th style="width:26%">價格帶（VND）</th><th style="width:14%">≈USD</th><th style="width:26%">代表產品</th><th>層級與備註</th></tr>
+  <tr><td class="b num">150 萬 – 300 萬</td><td class="num">$58–115</td><td>Bora BX-20 折疊琴 190 萬<br>Victor VT02 240–290 萬</td><td>中國白牌走量帶，電商主力</td></tr>
+  <tr><td class="b num">300 萬 – 700 萬</td><td class="num">$115–269</td><td>Master C300 350 萬<br>Victor VT05（附椅）699 萬</td><td>白牌升級款</td></tr>
+  <tr><td class="b num" style="color:var(--teal)">700 萬 – 1,500 萬</td><td class="num">$269–577</td><td colspan="2"><span class="gap">◆ 幾乎空白 ◆</span></td></tr>
+  <tr><td class="b num">1,500 萬 以上</td><td class="num">$577+</td><td>Roland RP-30 約 1,690 萬<br>Kawai ES120 約 1,800–2,000 萬</td><td>日系大廠入門款</td></tr>
+</table></div>
+
+<div class="call">
+<h3>700 萬 – 1,500 萬₫ 這個洞就是切入點</h3>
+<p>下面是中國白牌的低價紅海（Bora、Victor 靠價格廝殺），上面是日系大廠的品牌壁壘（Roland、Kawai）。<b>中間 $269–577 這一段沒有人好好經營。</b></p>
+<p>定價落在 <b>800 萬 – 1,000 萬₫（$308–385）</b> 的產品，<b>比 Victor 高一級、比 Yamaha／Roland 便宜一半</b>，同時避開兩邊的正面競爭。</p>
+<p>⚠️ 但要注意：<b>這個洞可能不是機會，而是需求斷層</b>——買家可能直接從 300 萬跳到 1,500 萬（預算不夠就買便宜的，預算夠就買日系）。<b>進場前必須驗證中間帶真的有人。</b></p>
+</div>
+
+<h3>二手傳統鋼琴的實際零售價</h3>
+<p class="sub">Việt Thanh 琴行公開標價，日本進口 Yamaha 直立琴。這是你二手線的直接對標價格。</p>
+<div class="tw"><table>
+  <tr><th style="width:18%">型號</th><th class="num">原價</th><th class="num">特價</th><th class="num">≈USD</th><th>備註</th></tr>
+  <tr><td class="b">Yamaha U1F</td><td class="num">28,000,000₫</td><td class="num b">23,500,000₫</td><td class="num">$904</td><td>入門二手</td></tr>
+  <tr><td class="b">Yamaha U1G</td><td class="num">30,000,000₫</td><td class="num b">25,000,000₫</td><td class="num">$962</td><td></td></tr>
+  <tr><td class="b">Yamaha U1E</td><td class="num">32,000,000₫</td><td class="num b">29,000,000₫</td><td class="num">$1,115</td><td></td></tr>
+  <tr><td class="b">Yamaha U1H</td><td class="num">40,000,000₫</td><td class="num">—</td><td class="num">$1,538</td><td>最熱門型號</td></tr>
+</table></div>
+<p class="src">來源：amnhacvietthanh.vn 公開標價，含 C/O C/Q 文件、0% 分期。實際成交價通常低於標價。</p>
+</section>
+
+<!-- 四、品牌層級 -->
+<section>
+<h2>四、品牌四層結構</h2>
+<p class="sub">越南市場的品牌分層清楚，各層的競爭邏輯完全不同。</p>
+
+<h3>① 日系大牌</h3>
+<dl class="tier">
+  <dt>Yamaha／Roland／Kawai／Casio</dt>
+  <dd>透過代理商進入，主打 1,500 萬₫ 以上。<b>電商銷量極小</b>（林提供資料：Roland FP-30X 約 2,000 萬₫ 只賣 30 台、Yamaha YDP-105 官方店 18 台），<b>量在實體店</b>。品牌信任度最高，價格是唯一障礙。</dd>
+</dl>
+
+<h3>② 中國白牌（電商主力）</h3>
+<dl class="tier">
+  <dt>Bora</dt>
+  <dd><b>江西寶瑞電子科技</b>（2003 成立，廣東＋江西兩廠、70,000㎡、200+ 工人）。主力 BX-20 折疊琴約 190 萬₫。<b>越南由 Piano House 代理</b>。林提供資料：單品市佔約 18%，品牌合計約 27%。</dd>
+  <dt>Victor</dt>
+  <dd>主力 VT02 約 240–290 萬₫、VT05 約 699 萬₫。林提供資料：約 15% 市佔。</dd>
+  <dt>Master</dt>
+  <dd>C300 約 350 萬₫。</dd>
+</dl>
+
+<h3>③ 貼牌（第三國品牌＋中國製造）</h3>
+<dl class="tier">
+  <dt>Kurtzman</dt>
+  <dd><b>英國註冊商標 ＋ 中國工廠生產 ＋ 專攻東南亞第三市場</b>。越南由 TYGY Music、Việt Music 等分銷。價格可達 <b>26,990,000₫（≈$1,038）</b>。<br><b>這個模式最值得研究</b>：同樣中國製造，掛第三國品牌賣到接近日系的價格。</dd>
+  <dt>Donner</dt>
+  <dd>中國品牌（廣州藍深科技，年營收 15 億人民幣，Amazon 樂器全球前三）。<b>2025 年 9 月起由 Việt Thương Music 取得越南電鋼琴分銷權</b>。</dd>
+</dl>
+
+<h3>④ 二手（日本進口）</h3>
+<dl class="tier">
+  <dt>Yamaha U 系列為主</dt>
+  <dd>U1E／U1F／U1G／U1H，零售 23.5–40 百萬₫。<b>幾乎完全在實體琴行</b>，電商 30 天僅 6 台。</dd>
+  <dt>⚠️ 尚未查證</dt>
+  <dd>進口商是誰、貨源管道、每年進口量、整備標準——這四項是二手線的核心情報，<b>目前空白</b>。</dd>
+</dl>
+</section>
+
+<!-- 五、通路 -->
+<section>
+<h2>五、通路結構：電商與實體是兩個世界</h2>
+
+<div class="cards">
+  <div class="card cool"><span class="v">164</span><span class="k">電鋼琴電商在售店舖</span></div>
+  <div class="card cool"><span class="v">366</span><span class="k">電鋼琴電商在售商品</span></div>
+  <div class="card hot"><span class="v">1</span><span class="k">二手琴電商在售店舖</span></div>
+  <div class="card hot"><span class="v">6</span><span class="k">二手琴 30 天銷量</span></div>
+</div>
+
+<h3>電商端</h3>
+<p class="sub">Shopee 為主戰場。特徵是<b>低價、白牌、標準化商品</b>——折疊琴、入門 61 鍵、附贈琴椅耳機的組合包。日系大牌在電商上量極小，不是他們的通路。</p>
+
+<h3>實體端（真正的金額所在）</h3>
+<div class="tw"><table>
+  <tr><th style="width:22%">琴行</th><th style="width:30%">定位</th><th>代理／特色</th></tr>
+  <tr><td class="b">Việt Thương Music</td><td>龍頭，全國 70+ 據點、HCMC 7+ 店</td><td>代理 Steinway（壟斷性）；10,000+ 學生；<b>2025/09 起取得 Donner 電鋼琴越南分銷權</b>；Trade-Up 政策「100% 折抵但需升級至 4 倍以上琴款」</td></tr>
+  <tr><td class="b">Piano House</td><td>自稱越南第一高端鋼琴分銷系統</td><td>代理 Yamaha、Roland、Kawai、Shigeru、Steinway、Bösendorfer、C.Bechstein、Feurich、Blüthner、Seiler<b>＋中國白牌 Bora</b>；Piano the One 越南獨家</td></tr>
+  <tr><td class="b">Việt Thanh</td><td>二手日本琴</td><td>Yamaha U 系列二手，附 C/O C/Q 文件、0% 分期</td></tr>
+  <tr><td class="b">Việt Music／TYGY Music</td><td>中價位</td><td>Kurtzman 貼牌分銷</td></tr>
+</table></div>
+
+<div class="call">
+<h3>通路的關鍵發現：高端代理商同時賣白牌</h3>
+<p><b>Piano House 一邊代理 Steinway、Bösendorfer，一邊代理中國白牌 Bora。</b>這代表越南的通路結構是<b>「一家通吃高低」</b>，不是按價格分層。</p>
+<p>含意：<b>你要進這個市場，繞不開這幾家代理商——除非自建通路。</b>而自建通路正是你已經在做的事（展銷中心＋教室＋直播），這是相對這些代理商唯一的結構性差異。</p>
+</div>
+</section>
+
+<!-- 六、進口 -->
+<section>
+<h2>六、進口法規與稅負</h2>
+<p class="sub">兩個關鍵問題已確認，都不是障礙。</p>
+<div class="tw"><table>
+  <tr><th style="width:26%">項目</th><th>結論</th></tr>
+  <tr><td class="b">二手鋼琴可否進口</td><td class="b" style="color:var(--teal)">✅ 可以。</b>「đàn piano đã qua sử dụng <b>không nằm trong danh mục cấm nhập khẩu</b>」（二手鋼琴不在禁止進口清單），視為一般商品。法源：Nghị định 187/2013/NĐ-CP、Thông tư 04/2014/TT-BCT</td></tr>
+  <tr><td class="b">進口關稅（HS 9201）</td><td><b>MFN 3%</b>／普通稅率 4.5%</td></tr>
+  <tr><td class="b">VAT</td><td><b>8%</b></td></tr>
+  <tr><td class="b">環保稅／特別消費稅</td><td>不適用</td></tr>
+  <tr><td class="b">⚠️ 待確認</td><td>從中國進口走 <b>ACFTA</b>（中國–東協自貿協定）是否為 0%；二手琴的完稅價格如何認定</td></tr>
+</table></div>
+<p class="src">另注意：2012 年海關公文 2513/TCHQ-GSQL 是針對「進口二手鋼琴整修後<b>再出口</b>」的個案（加工再出口模式），與進口內銷不同，勿混用。</p>
+</section>
+
+<!-- 七、市場區隔 -->
+<section>
+<h2>七、市場區隔與產品線建議</h2>
+<div class="tw"><table>
+  <tr><th style="width:18%">區隔</th><th style="width:20%">價格帶</th><th style="width:22%">買家</th><th>現況與機會</th></tr>
+  <tr><td class="b">入門走量</td><td class="num">150–700 萬₫</td><td>初學兒童家庭、預算導向</td><td>中國白牌紅海，靠價格廝殺。<b>不建議進入</b></td></tr>
+  <tr><td class="b" style="color:var(--teal)">中段空白</td><td class="num">700–1,500 萬₫</td><td>認真學琴但買不起日系</td><td><b>主要機會</b>。比白牌高一級、比日系便宜一半。⚠️ 需先驗證需求是否真的存在</td></tr>
+  <tr><td class="b">日系入門</td><td class="num">1,500–2,000 萬₫</td><td>信任品牌、預算充足</td><td>Roland／Kawai 把守，品牌壁壘高</td></tr>
+  <tr><td class="b">二手傳統琴</td><td class="num">2,350–4,000 萬₫</td><td>長期學習、要真鋼琴觸感</td><td><b>100% 線下</b>。Việt Thanh 等琴行為對手。<b>翻修能力是你的差異點</b></td></tr>
+</table></div>
+</section>
+
+<!-- 八、缺口 -->
+<section>
+<h2>八、還沒查到的（下一步）</h2>
+<div class="tw"><table>
+  <tr><th style="width:34%">項目</th><th>為什麼重要</th></tr>
+  <tr><td class="b">Metric 付費版數據</td><td>品牌市佔、Top 20 店舖、價格帶分布、月度趨勢——<b>免費版全鎖住</b>。7 天試用可解</td></tr>
+  <tr><td class="b">二手琴進口商與貨源</td><td>這是二手線的直接競爭者，也是你要搶的位置。目前完全空白</td></tr>
+  <tr><td class="b">實體店真實成交價</td><td>標價與成交價的落差決定真實毛利空間</td></tr>
+  <tr><td class="b">700–1,500 萬帶的需求驗證</td><td>是機會還是需求斷層，決定整個定價策略</td></tr>
+  <tr><td class="b">其他線上渠道</td><td>Lazada、TikTok Shop、Facebook 社團未納入</td></tr>
+  <tr><td class="b">ACFTA 稅率</td><td>從中國進口是否 0%，直接影響成本結構</td></tr>
+</table></div>
+</section>
+
+<footer>
+資料來源：Metric.vn（Shopee 渠道，2026-08-24～09-22）、amnhacvietthanh.vn、pianohouse.vn、vietthuong.vn、vietmusic.vn、caselaw.vn（HS Code）、projectshipping.vn（進口法規）。<br>
+本報告為公開資料與電商平台數據之整理，非市場稽核，不構成投資或法律建議。價格為標價非成交價。
+</footer>
+
+</div>
+
+</body>
+</html>
